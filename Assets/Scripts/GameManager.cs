@@ -123,6 +123,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        
         Debug.Log("Количество шуток " + joke.Length);
         for (int i = 0; i < places.Length; i++)
         {
