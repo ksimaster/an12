@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
                              "Я съем ведро курочки!",
                              "Сыграем на желание?",
                              "Зонтик бросила хозяйка, шевелились лишь кусты! Мокро!",
-                             "Хлопай лапками и взлетай!",
+                             "Когда девушка влюбилась",
                              "Играть! Весь день! Играть!",
                              "Человек-шаурма",
                              "А может, поедем ко мне! У меня кое-что есть!",
@@ -153,6 +153,26 @@ public class GameManager : MonoBehaviour
         places[(places.Length - 1) - count].SetActive(false);
         count += 1;
         if (count >= data.Length) count = 0;
+        PlayerPrefs.SetInt("Count", count);
+        places[(places.Length - 1) - count].SetActive(true);
+        title.text = joke[(joke.Length - 1) - count];
+        Debug.Log(count);
+        // place.GetComponent<FixedGif>().
+        /*
+        Destroy(place.GetComponent<FixedGif>());
+        place.AddComponent<FixedGif>();
+        place.GetComponent<FixedGif>().enabled = true;
+        place.GetComponent<FixedGif>().data = data[count];
+        _sprites = GifUtility.Load(data[count]);
+        place.GetComponent<FixedGif>()._sprites = _sprites;
+        */
+    }
+
+    public void BackGif()
+    {
+        places[(places.Length - 1) - count].SetActive(false);
+        count -= 1;
+        if (count < 0) count = data.Length - 1;
         PlayerPrefs.SetInt("Count", count);
         places[(places.Length - 1) - count].SetActive(true);
         title.text = joke[(joke.Length - 1) - count];
