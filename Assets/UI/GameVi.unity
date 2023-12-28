@@ -4434,14 +4434,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2026676909}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: NextGif
-        m_Mode: 1
+      - m_Target: {fileID: 159103044416920433}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: SwitchScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12386,14 +12386,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2026676909}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: NextGif
-        m_Mode: 1
+      - m_Target: {fileID: 159103044416920433}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: SwitchScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12530,3 +12530,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127063027}
   m_CullTransparentMesh: 1
+--- !u!1001 &159103044416920432
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2158468857668484553, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158468857668484553, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 715.75726
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158468857668484553, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 265.54022
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158468857668484553, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.138911
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158468857668484553, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158468857668484553, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158468857668484553, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158468857668484553, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158468857668484553, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158468857668484553, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158468857668484553, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435966431241799257, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+      propertyPath: m_Name
+      value: SceneSwitch
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+--- !u!114 &159103044416920433 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1258639203387290262, guid: 49556337ce328014faab1468a6e3bf85, type: 3}
+  m_PrefabInstance: {fileID: 159103044416920432}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916d1901d37a0024eabf69fc68185e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
